@@ -21,8 +21,3 @@ spec:
       image: oroncohen/echo
       tag: 1.0.0
     replicaCount: 1
-    hpa:
-      enabled: true
-      maxReplicas: 3
-      cpu: 50
-      memory: 256Mi
