@@ -16,7 +16,7 @@ spec:
   values:
     app:
       image: oroncohen/echo
-      tag: v-1.0.0
+      tag: 1.0.0
     replicaCount: 1
     hpa:
       enabled: true
