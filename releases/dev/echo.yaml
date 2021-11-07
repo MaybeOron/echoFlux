@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: echo-dev
-  namespace: dev
+  namespace: default
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: semver:~1.0
@@ -16,7 +16,7 @@ spec:
   values:
     app:
       image: oroncohen/echo
-      tag: 1.0.0
+      tag: 1.0.1
     replicaCount: 1
     hpa:
       enabled: false
