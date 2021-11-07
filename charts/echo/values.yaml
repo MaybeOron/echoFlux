@@ -1,0 +1,27 @@
+app:
+  namespace: default
+  replicas: 2
+  name: echo-yaml
+  image: gcr.io/k8s-3-echov3/echov3
+  tag: latest
+  port: 3000
+  resources:
+    limits:
+      memory: "200Mi"
+      cpu: "300m"
+    requests:
+      memory: "100Mi"
+      cpu: "200m"
+
+domain:
+  url: oronechov6.tk
+
+issuer:
+  email: oronboy100@gmail.com
+
+# mongodb:
+#   enabled: true
+#   auth:
+#     username: "mongo"
+#     password: "mongo"
+#     database: "echodb"

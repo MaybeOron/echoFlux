@@ -1,0 +1,24 @@
+apiVersion: batch/v1beta1
+kind: CronJob
+metadata:
+  name: mongocheck
+spec:
+  schedule: "0 0 * * *"
+  successfulJobsHistoryLimit: 1
+  failedJobsHistoryLimit: 1
+  jobTemplate:
+    spec:
+      template:
+        spec:
+          containers:
+          - name: mongocheck
+            image: mongo
+            imagePullPolicy: IfNotPresent
+            env:
+            - name: RN
+              value: {{ .Release.Name }}
+            command:
+            - /bin/bash
+            - -c
+            - mongo echodb --eval "db.getCollection('echos').drop()"  --host "$(RN)"-mongodb-headless -u mongo -p mongo
+          restartPolicy: Never
