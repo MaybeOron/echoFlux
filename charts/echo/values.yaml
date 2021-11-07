@@ -14,7 +14,7 @@ app:
       cpu: "200m"
 
 domain:
-  url: oronechov6.tk
+  url: oronflux.tk
 
 issuer:
   email: oronboy100@gmail.com
