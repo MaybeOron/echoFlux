@@ -6,10 +6,9 @@ metadata:
   namespace: default
   annotations:
     fluxcd.io/automated: "true"
-    repository.fluxcd.io/app: app.image
-    tag.fluxcd.io/app: app.tag
-    filter.fluxcd.io/app: semver:~1.0
-    #filter.fluxcd.io/chart-image: semver:~1.0
+    repository.fluxcd.io/app: app.image # image value [ values.app.image ]
+    tag.fluxcd.io/app: app.tag # tag value [ values.app.image ]
+    filter.fluxcd.io/app: semver:~1.0 # what will get update -> the tag
 spec:
   releaseName: echo-dev
   chart:
