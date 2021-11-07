@@ -11,7 +11,7 @@ spec:
   releaseName: echo-dev
   chart:
     git: git@github.com:MaybeOron/echoFlux
-    path: charts/podinfo
+    path: charts/echo
     ref: master
   values:
     app:
