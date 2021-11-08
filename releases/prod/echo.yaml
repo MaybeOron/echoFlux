@@ -17,8 +17,8 @@ spec:
     ref: master
   values:
     app:
-      namespace: prod
       image: oroncohen/echo
+      namespace: prod
       name: echo-prod
       tag: 1.0.8
     domain:
