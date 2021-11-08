@@ -20,7 +20,7 @@ spec:
       image: oroncohen/echo
       namespace: prod
       name: echo-prod
-      tag: 1.0.8
+      tag: 1.0.9
     domain:
       url: prod.oronflux.tk
     replicaCount: 1
