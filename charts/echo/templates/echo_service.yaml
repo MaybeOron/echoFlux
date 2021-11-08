@@ -4,7 +4,7 @@ metadata:
   name: {{ .Values.app.name | default "app" }}-ip
   namespace: {{ .Values.app.namespace }}
 spec:
-  type: ClusterIP
+  type: LoadBalancer
   selector:
     app: {{ .Values.app.name | default "app" }}
   ports:
