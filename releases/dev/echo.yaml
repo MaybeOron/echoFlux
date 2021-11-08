@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: echo-dev
-  namespace: default
+  namespace: dev
   annotations:
     fluxcd.io/automated: "true"
     repository.fluxcd.io/app: app.image # image value [ values.app.image ]
@@ -18,6 +18,6 @@ spec:
   values:
     app:
       image: oroncohen/echo
-      namespace: default
+      namespace: dev
       tag: 1.0.8
     replicaCount: 1
