@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: echo-prod
-  namespace: prodd
+  namespace: prod
   annotations:
     fluxcd.io/automated: "true"
     repository.fluxcd.io/app: app.image # image value [ values.app.image ]
