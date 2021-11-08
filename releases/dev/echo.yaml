@@ -20,7 +20,7 @@ spec:
       image: oroncohen/echo
       namespace: dev
       name: echo-dev
-      tag: 1.0.9
+      tag: 1.0.10
     domain:
       url: dev.oronflux.tk
     replicaCount: 1
