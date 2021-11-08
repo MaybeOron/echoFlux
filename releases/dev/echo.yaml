@@ -22,5 +22,5 @@ spec:
       name: echo-dev
       tag: 1.0.8
     domain:
-      url: oronflux.tk/dev
+      url: dev.oronflux.tk
     replicaCount: 1
