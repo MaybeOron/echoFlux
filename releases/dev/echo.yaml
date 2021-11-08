@@ -21,4 +21,6 @@ spec:
       namespace: dev
       name: echo-dev
       tag: 1.0.8
+    domain:
+      url: oronflux.tk/dev
     replicaCount: 1

@@ -21,4 +21,6 @@ spec:
       image: oroncohen/echo
       name: echo-prod
       tag: 1.0.8
+    domain:
+      url: oronflux.tk/prod
     replicaCount: 1
