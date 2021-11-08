@@ -9,12 +9,12 @@ metadata:
   labels:
     name: echo-ingress
 spec:
-  # tls:
-  # - hosts:
-  #   - {{ .Values.domain.url }}
-  #   secretName: echo-secret-tls-sec-cqx7l
-  #   #secretName: echo-secret-tls-sec
-  #   #secretName: echo-secret-tls-q8ths
+  tls:
+  - hosts:
+    - {{ .Values.domain.url }}
+    secretName: echo-secret-tls-sec-cqx7l
+    #secretName: echo-secret-tls-sec
+    #secretName: echo-secret-tls-q8ths
   rules:
   - host: {{ .Values.domain.url }}
     http:
